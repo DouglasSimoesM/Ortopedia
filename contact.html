@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        html, body {
+    margin: 0;
+        }
+        body {
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 1200px;
+            display: flex;
+            margin: 0 auto;
+            background-color: #f1f1f1;
+        }
+        .main {
+            display: flex;
+            flex-flow: column;
+            width: 85%;
+        }
+        .menu {
+            width: 15%;
+            background-color: #E1E1E1;
+            padding: 10px 20px 0px;
+        }
+        .header {
+            background-color: #E1E1E1;
+            min-height: 150px;
+        }
+        .content {
+            background-color: white;
+            min-height: 300px;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #E1E1E1;
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul style="list-style-type: none; padding: 10px;">
+                <li><a href="index.html" title="Page initial">Page initial</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+                <li><a href="officeHours.html" title="officeHours">Office Hours</a></li>
+            </ul>     
+        </div>
+
+        <div class="main">
+            <div class="header" style="text-align: right;">
+                <img src="Contact Us.jpg" width="1000" height="200" >
+            </div>
+    
+            <div class="content">
+                <h1>Contact Us</h1>
+    
+                <h2>Contact Phones (Mobile, Landline and WhatsApp)</h2>
+                <p>Landline: +55 (15) 9999-9999</p>
+                <p>Mobile: +55 (15) 99999-9999</p>
+                <p>WhatsApp: +55 (15) 99999-9999</p>
+                
+                <h2>Full Address of the Clinic</h2>
+                <p>Estr. do Vinho (Spv-077) - São Roque</p>
+                
+                <h2>Contact Form</h2>
+                <form method="get"> <!-- get apenas para test (Correto seria post)--> 
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject" required><br><br>
+                    
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+                    
+                    <input type="submit" value="Send">
+                    <input type="reset" value="Clear Form">
+                </form>
+
+            </div>
+    
+            <div class="footer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7386162310972!2d-47.141682224830035!3d-23.577829378788557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0cd49539fcc1%3A0x1e1f1139858fba90!2sEstr.%20do%20Vinho%20(Spv-077)%2C%20S%C3%A3o%20Roque%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1739106423277!5m2!1spt-BR!2sbr" width="1000" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Orthopedic Clinic | (15) 99999-9999 | email@examplo.com </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

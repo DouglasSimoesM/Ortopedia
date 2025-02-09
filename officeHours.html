@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+    <style>
+        table{
+            box-shadow: -1px -3px 16px 7px rgba(0,0,0,0.34);
+            -webkit-box-shadow: -1px -3px 16px 7px rgba(0,0,0,0.34);
+            -moz-box-shadow: -1px -3px 16px 7px rgba(0,0,0,0.34);
+        }
+        table tfoot td {
+            background-color: lightgray;
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: #f1f1f1;
+        }
+        table tbody tr:hover td {
+            background-color: yellow;
+            cursor: pointer;
+        }
+        html, body {
+    margin: 0;
+        }
+        body {
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .wrapper {
+            width: 1200px;
+            display: flex;
+            margin: 0 auto;
+            background-color: #f1f1f1;
+        }
+        .main {
+            display: flex;
+            flex-flow: column;
+            width: 85%;
+        }
+        .menu {
+            width: 15%;
+            background-color: #E1E1E1;
+            padding: 10px 20px 0px;
+        }
+        .header {
+            background-color: #E1E1E1;
+            min-height: 150px;
+        }
+        .content {
+            background-color: white;
+            min-height: 300px;
+            padding: 20px;
+        }
+        .footer {
+            background-color: #E1E1E1;
+            min-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <ul style="list-style-type: none; padding: 10px;">
+                <li><a href="index.html" title="Page initial">Page initial</a></li>
+                <li><a href="about.html" title="About">About</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
+                <li><a href="officeHours.html" title="officeHours">Office Hours</a></li>
+            </ul>     
+        </div>
+
+        <div class="main">
+            <div class="header" style="text-align: right;">
+                <img src="officehours.png" width="1000" height="200" >
+            </div>
+    
+            <div class="content">
+                <h1>Our Services</h1>
+    
+                <h2>Orthopedic Immobilization</h2>
+                <p>Our clinic provides orthopedic immobilization services to stabilize and support injuries. This includes the use of casts, braces, and splints to ensure proper healing and prevent further damage.</p>
+    
+                <h2>Physiotherapy</h2>
+                <p>We offer comprehensive physiotherapy services to help patients recover from injuries, surgeries, and chronic conditions. Our personalized rehabilitation programs are designed to improve mobility, strength, and overall well-being.</p>
+    
+                <h2>Orthopedist</h2>
+                <p>Our team of experienced orthopedists specializes in diagnosing and treating a wide range of musculoskeletal conditions. From fractures and sprains to arthritis and joint disorders, we provide expert care to help you achieve optimal health.
+                <br>
+                <br>
+                <table summary="Tabela de horario defuncionamento" width="700" align="center" cellspacing="0" cellpadding="12">
+                    <thead>
+                        <tr>
+                            <th colspan="4">Opening hours</th>
+                        </tr>
+                        <tr>
+                            <th >Services</th>
+                            <th>Monday to Friday</th>
+                            <th>Saturdays</th>
+                            <th>Holiday</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td >Orthopedic Immobilization</td>
+                            <td>8 AM - 10 PM</td>
+                            <td>8 AM - 6 PM</td>
+                            <td>08 AM - 13 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Physiotherapy</td>
+                            <td>8 AM - 10 PM</td>
+                            <td>8 AM - 6 PM</td>
+                            <td>08 AM - 13 AM</td>
+                        </tr>
+                        <tr>
+                            <td>Orthopedist</td>
+                            <td>8 AM - 10 PM</td>
+                            <td>8 AM - 6 PM</td>
+                            <td>08 AM - 13 AM</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+    
+            <div class="footer">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.7386162310972!2d-47.141682224830035!3d-23.577829378788557!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf0cd49539fcc1%3A0x1e1f1139858fba90!2sEstr.%20do%20Vinho%20(Spv-077)%2C%20S%C3%A3o%20Roque%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1739106423277!5m2!1spt-BR!2sbr" width="1000" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <p>Orthopedic Clinic | (15) 99999-9999 | email@examplo.com </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
